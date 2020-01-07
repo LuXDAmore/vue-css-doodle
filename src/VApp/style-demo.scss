@@ -1,0 +1,22 @@
+.app {
+
+    section {
+
+        &.doodle {
+
+            position: relative;
+            height: 33vh;
+            min-height: 330px;
+
+            &:not(:first-child) {
+
+                overflow: hidden;
+                background-color: #333;
+
+            }
+
+        }
+
+    }
+
+}

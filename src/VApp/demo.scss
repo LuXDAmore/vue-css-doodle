@@ -1,63 +1,145 @@
 /* stylelint-disable */
 css-doodle {
 
-    --color: @p(#feca57, #e74c3c, #feca57, #e74c3c, #feca57, #feca57);
-    --animationDelay: @size() * @i();
+    &[demo-one] {
 
-    --ruleOne: (
+        --color: @p(#feca57, #e74c3c, #feca57, #e74c3c, #feca57, #feca57);
+        --animationDelay: @size() * @i();
 
-        :doodle {
+        --ruleOne: (
 
-            @grid: 30x1 / 18vmin;
-            --deg: @p(-180deg, 180deg, 90deg, -90deg);
+            :doodle {
 
-        }
+                @grid: 30x1 / 18vmin;
+                --deg: @p(-180deg, 180deg, 90deg, -90deg);
 
-        :container {
-
-            perspective: @r(30, 36)vmin;
-            transform: translate(16px, 80px);
-            opacity: @r(.63, .8);
-
-        }
-
-        ::after,
-        ::before {
-
-            content: "";
-            background: var(--color);
-            @place-cell: @r(100%) @r(100%);
-            @size: @r(9px);
-            @shape: @p(heart, triangle, hypocycloid, circle);
-
-        }
-
-        @place-cell: center;
-        @size: 100%;
-
-        box-shadow: @m2(0 0 54px var(--color));
-        background: @m100(radial-gradient(var(--color) 50%, transparent 0) @r(-18%, 120%) @r(-18%, 100%) / 1px 1px no-repeat);
-
-        will-change: transform, opacity;
-        animation: scale-up 12s linear infinite;
-        animation-delay: calc(-12s / var(--animationDelay));
-
-        @keyframes scale-up {
-            0%,
-            95.01%,
-            100% {
-                transform: translateZ( 0 ) rotateZ( 0 );
-                opacity: 0;
             }
-            10% {
-                opacity: 1;
-            }
-            95% {
-                transform: translateZ( @r(30, 36)vmin ) rotateZ(@var(--deg));
-            }
-        }
 
-    );
+            :container {
 
+                perspective: @r(30, 36)vmin;
+                transform: translate(16px, 80px);
+                opacity: @r(.63, .8);
+
+            }
+
+            ::after,
+            ::before {
+
+                content: "";
+                background: var(--color);
+                @place-cell: @r(100%) @r(100%);
+                @size: @r(9px);
+                @shape: @p(heart, triangle, hypocycloid, circle);
+
+            }
+
+            @place-cell: center;
+            @size: 100%;
+
+            box-shadow: @m2(0 0 54px var(--color));
+            background: @m100(radial-gradient(var(--color) 50%, transparent 0) @r(-18%, 120%) @r(-18%, 100%) / 1px 1px no-repeat);
+
+            will-change: transform, opacity;
+            animation: scale-up 12s linear infinite;
+            animation-delay: calc(-12s / var(--animationDelay));
+
+            @keyframes scale-up {
+                0%,
+                95.01%,
+                100% {
+                    transform: translateZ( 0 ) rotateZ( 0 );
+                    opacity: 0;
+                }
+                10% {
+                    opacity: 1;
+                }
+                95% {
+                    transform: translateZ( @r(30, 36)vmin ) rotateZ(@var(--deg));
+                }
+            }
+
+        );
+
+    }
+
+    &[demo-two] {
+
+        --color: @p(#E63946, #F1FAEE, #A8DADC, #457B9D, #1D3557);
+        --position: @r(0%, 100%) @r(0%, 100%);
+
+        --pat-1: (
+            linear-gradient(var(--color), @lp())
+            var(--position) / @r(1px) @r(15%)
+            no-repeat
+        );
+
+        --pat-2: (
+            linear-gradient(
+                @pick( -180deg, -135deg, -90deg, -45deg, 0deg, 45deg, 90deg, 135deg, 180deg ),
+                var(--color) 50%, transparent 0
+            ) var(--position) / @r(3%) @lr() no-repeat
+        );
+
+        --pat-3: (
+            linear-gradient(var(--color), @lp())
+            var(--position) / @r(15%) 1px
+            no-repeat
+        );
+
+        --pat-4: (
+            radial-gradient(var(--color), @lp())
+            var(--position) / @r(5%) @lr()
+            no-repeat
+        );
+
+        --pat-5: (
+            radial-gradient(var(--color) 50%, transparent 0)
+            var(--position) / @r(5%) @lr()
+            no-repeat
+        );
+
+        --pat-6: (
+            conic-gradient(
+                from calc(145deg + 2 * 90deg),
+                var(--color) 0,
+                @lp() 20%,
+                transparent 20%,
+                transparent 50%
+            )
+            var(--position) / @r(5%) @lr()
+            no-repeat
+        );
+
+        --pat-7: (
+            linear-gradient(
+                @p(45deg, -45deg),
+                transparent 0,
+                transparent calc(50% - .2px),
+                var(--color) calc(50% - .5px),
+                @lp() calc(50% + .5px),
+                transparent calc(50% + .2px)
+            )
+            var(--position) / @r(5%) @lr()
+            no-repeat
+        );
+
+        --ruleTwo: (
+            :doodle {
+                @grid: 1 / 100vmax;
+            }
+            background-blend-mode: color-burn;
+            background:
+                @m(80, var(--pat-1)),
+                @m(80, var(--pat-2)),
+                @m(80, var(--pat-3)),
+                @m(80, var(--pat-4)),
+                @m(80, var(--pat-5)),
+                @m(80, var(--pat-6)),
+                @m(80, var(--pat-7))
+            ;
+        );
+
+    }
 }
 /* stylelint-enable */
