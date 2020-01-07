@@ -23,6 +23,7 @@
     // css-doodle import
     const cssDoodle = () => import(
         /* webpackChunkName: "css-doodle" */
+        /* webpackMode: "eager" */
         'css-doodle'
     );
 
@@ -54,6 +55,22 @@
                 type: String,
                 default: null,
             },
+            mxAuto: {
+                type: Boolean,
+                default: false,
+            },
+            fitWidth: {
+                type: Boolean,
+                default: false,
+            },
+            fitHeight: {
+                type: Boolean,
+                default: false,
+            },
+            fillHeight: {
+                type: Boolean,
+                default: false,
+            },
             clickToUpdate: {
                 type: Boolean,
                 default: false,
@@ -76,8 +93,12 @@
             classes() {
 
                 return {
-                    'vue-css-doodle--overflow-hidden': this.overflowHidden,
+                    'vue-css-doodle--mx-auto': this.mxAuto,
+                    'vue-css-doodle--fit-width': this.fitWidth,
+                    'vue-css-doodle--fit-height': this.fitHeight,
+                    'vue-css-doodle--fill-height': this.fillHeight,
                     'vue-css-doodle--absolute': this.absolute,
+                    'vue-css-doodle--overflow-hidden': this.overflowHidden,
                 };
 
             },
@@ -100,34 +121,38 @@
         },
         async mounted() {
 
-            await cssDoodle();
+            try {
 
-            this.$nextTick(
-                this.init,
-            );
+                await cssDoodle();
+
+                this.$nextTick(
+                    this.init,
+                );
+
+            } catch( e ) {
+
+                if( process.env.NODE_ENV !== 'production' ) {
+
+                    console.error(
+                        e,
+                    );
+
+                }
+
+            }
 
         },
         methods: {
-            updated() {
-
-                this.$emit(
-                    'input',
-                    this.doodle,
-                );
-
-            },
             init() {
 
                 this.doodle = this.$refs.doodle.firstElementChild;
 
-                this.updated();
+                this.generate();
 
             },
             generate() {
 
                 this.doodle.update();
-
-                this.updated();
 
             },
         },

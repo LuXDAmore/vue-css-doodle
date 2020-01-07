@@ -1,10 +1,51 @@
 .vue-css-doodle {
 
-    > css-doodle {
+    &--mx-auto {
 
-        margin: 0 auto;
-        max-height: 100%;
-        max-width: 100%;
+        > css-doodle {
+
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+
+    }
+
+    &--fill {
+
+        &-height {
+
+            > css-doodle {
+
+                height: 100%;
+
+            }
+
+        }
+
+    }
+
+    &--fit {
+
+        &-width {
+
+            > css-doodle {
+
+                max-width: 100%;
+
+            }
+
+        }
+
+        &-height {
+
+            > css-doodle {
+
+                max-height: 100%;
+
+            }
+
+        }
 
     }
 

@@ -67,6 +67,13 @@ module.exports = {
         // Generic
         'indentation': 4,
         'no-descending-specificity': null,
+        'selector-type-no-unknown': [
+            true,
+            {
+                ignore: [ 'custom-elements' ],
+                ignoreTypes: [ 'css-doodle' ],
+            },
+        ],
         'selector-pseudo-element-no-unknown': [
             true,
             {

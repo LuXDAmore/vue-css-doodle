@@ -2,7 +2,7 @@
 
 [DEMO](https://luxdamore.github.io/vue-css-doodle)
 
-> Porting of css-doodle to VueJs
+> Porting of css-doodle to VueJs, a web component for drawing patterns with CSS
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -140,6 +140,10 @@ _Use it just one time in the main file of your project or in every views where y
 | use | String | null | false | Check the [DOCS](https://css-doodle.com/#usage) |
 | height | String | null | false | Height of the doodle |
 | width | String | null | false | Width of the doodle |
+| mxAuto | Boolean | false | false | Add margin-auto to the doodle |
+| fitWidth | Boolean | false | false | Force the doodle to fit in a max-width |
+| fitHeight | Boolean | false | false | Force the doodle to fit in a max-height |
+| fillHeight | Boolean | false | false | Expand the doodle to an height of 100% |
 | clickToUpdate | Boolean | false | false | Refresh on click |
 | overflowHidden | Boolean | false | false | Hide the overflow |
 | absolute | Boolean | false | false | Set position: absolute |
@@ -185,4 +189,6 @@ Do you want to share a beer? We can be good friends.. __[Paypal](https://www.pay
 
 #### 💘 Inspired by
 
-[Css-Doodle](https://css-doodle.com)
+A web component for drawing patterns with CSS, [css-doodle](https://css-doodle.com)
+
+> Check the full list of doodle on Codepen, [here](https://codepen.io/collection/XyVkpQ)

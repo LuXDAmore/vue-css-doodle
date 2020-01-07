@@ -65,6 +65,27 @@ $background-color: #fff;
     section {
 
         margin: 0 0 16px;
+        min-height: 100vh;
+
+    }
+
+    .controls {
+
+        position: fixed;
+        margin: 0 auto;
+        mix-blend-mode: color-burn;
+
+        &--bottom {
+
+            top: 92vh;
+
+        }
+
+        select {
+
+            width: 100%;
+
+        }
 
     }
 
