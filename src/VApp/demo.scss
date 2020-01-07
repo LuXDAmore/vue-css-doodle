@@ -1,0 +1,63 @@
+/* stylelint-disable */
+css-doodle {
+
+    --color: @p(#feca57, #e74c3c, #feca57, #e74c3c, #feca57, #feca57);
+    --animationDelay: @size() * @i();
+
+    --ruleOne: (
+
+        :doodle {
+
+            @grid: 30x1 / 18vmin;
+            --deg: @p(-180deg, 180deg, 90deg, -90deg);
+
+        }
+
+        :container {
+
+            perspective: @r(30, 36)vmin;
+            transform: translate(16px, 80px);
+            opacity: @r(.63, .8);
+
+        }
+
+        ::after,
+        ::before {
+
+            content: "";
+            background: var(--color);
+            @place-cell: @r(100%) @r(100%);
+            @size: @r(9px);
+            @shape: @p(heart, triangle, hypocycloid, circle);
+
+        }
+
+        @place-cell: center;
+        @size: 100%;
+
+        box-shadow: @m2(0 0 54px var(--color));
+        background: @m100(radial-gradient(var(--color) 50%, transparent 0) @r(-18%, 120%) @r(-18%, 100%) / 1px 1px no-repeat);
+
+        will-change: transform, opacity;
+        animation: scale-up 12s linear infinite;
+        animation-delay: calc(-12s / var(--animationDelay));
+
+        @keyframes scale-up {
+            0%,
+            95.01%,
+            100% {
+                transform: translateZ( 0 ) rotateZ( 0 );
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            95% {
+                transform: translateZ( @r(30, 36)vmin ) rotateZ(@var(--deg));
+            }
+        }
+
+    );
+
+}
+/* stylelint-enable */

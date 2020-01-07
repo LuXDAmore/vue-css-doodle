@@ -1,0 +1,110 @@
+{
+    "name": "@luxdamore/vue-css-doodle",
+    "version": "0.0.1",
+    "description": "Porting of css-doodle to VueJs - SSR Compatible",
+    "author": "Luca Iaconelli <lucabelli@msn.com> (https://lucaiaconelli.it)",
+    "contributors": [
+        {
+            "name": "Luca Iaconelli <lucabelli@msn.com> (https://lucaiaconelli.it)"
+        }
+    ],
+    "homepage": "https://luxdamore.github.io/vue-css-doodle",
+    "main": "dist/VueCssDoodle.umd.min.js",
+    "umd": "dist/VueCssDoodle.umd.min.js",
+    "unpkg": "dist/VueCssDoodle.umd.min.js",
+    "commonjs": "dist/VueCssDoodle.common.js",
+    "browser": "dist/VueCssDoodle.umd.min.js",
+    "style": "dist/VueCssDoodle.css",
+    "keywords": [
+        "vuejs",
+        "nuxtjs",
+        "css-doodle",
+        "effects",
+        "design",
+        "css",
+        "doodle"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "vue-cli-service serve",
+        "build:library": "vue-cli-service build --dest ./dist --target lib --name VueCssDoodle ./src/VueCssDoodle/index.js",
+        "build:docs": "vue-cli-service build --modern --dest ./docs",
+        "build": "npm run build:library && npm run build:docs",
+        "prepare": "npm run build",
+        "check-linting": "vue-cli-service lint",
+        "eslint": "eslint --ext .js,.vue .",
+        "eslint-fix": "eslint --fix --ext .js,.vue .",
+        "stylelint": "stylelint ./src/**/*.scss",
+        "stylelint-fix": "stylelint ./src/**/*.scss --fix",
+        "lint": "npm run eslint && npm run stylelint",
+        "lint-fix": "npm run eslint-fix",
+        "release": "standard-version && git push --follow-tags && npm publish",
+        "precommit": "npm run lint"
+    },
+    "dependencies": {
+        "css-doodle": "^0.7.7",
+        "vue": "^2.6.11"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "latest",
+        "@commitlint/config-conventional": "latest",
+        "@nuxtjs/eslint-config": "latest",
+        "@vue/cli-plugin-babel": "^4.1.1",
+        "@vue/cli-plugin-eslint": "^4.1.1",
+        "@vue/cli-service": "^4.1.1",
+        "@vue/eslint-config-prettier": "^6.0.0",
+        "babel-eslint": "^10.0.3",
+        "cssnano": "^4.1.10",
+        "eslint": "^6.7.2",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-loader": "^3.0.3",
+        "eslint-plugin-compat": "^3.3.0",
+        "eslint-plugin-import": "^2.19.1",
+        "eslint-plugin-node": "^11.0.0",
+        "eslint-plugin-nuxt": "^0.5.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "eslint-plugin-unicorn": "^15.0.1",
+        "eslint-plugin-vue": "^6.0.1",
+        "github-markdown-css": "^3.0.1",
+        "highlight.js": "^9.17.1",
+        "husky": "latest",
+        "modern-normalize": "^0.6.0",
+        "node-sass": "^4.13.0",
+        "postcss-combine-duplicated-selectors": "^8.0.3",
+        "postcss-import": "^12.0.1",
+        "postcss-loader": "^3.0.0",
+        "postcss-preset-env": "^6.7.0",
+        "postcss-scoped": "^0.0.0",
+        "postcss-scss": "^2.0.0",
+        "postcss-url": "^8.0.0",
+        "prettier": "^1.19.1",
+        "prettier-eslint": "^9.0.1",
+        "prettier-stylelint": "^0.4.2",
+        "sass-loader": "^8.0.0",
+        "standard-version": "latest",
+        "stylelint": "^12.0.0",
+        "stylelint-config-rational-order": "^0.1.2",
+        "stylelint-config-sass-guidelines": "^6.2.0",
+        "stylelint-config-standard": "^19.0.0",
+        "stylelint-no-unsupported-browser-features": "^4.0.0",
+        "stylelint-order": "^4.0.0",
+        "vue-markdown-loader": "^2.4.1",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LuXDAmore/vue-css-doodle.git"
+    },
+    "bugs": {
+        "url": "https://github.com/LuXDAmore/vue-css-doodle/issues"
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    }
+}

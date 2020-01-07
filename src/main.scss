@@ -1,0 +1,68 @@
+$color-start: #cb2d3e;
+$color-end: #ef473a;
+
+:root {
+
+    --color-start: #{$color-start};
+    --color-end: #{$color-end};
+
+    font-size: 16px;
+
+}
+
+// Skeleton
+body {
+
+    padding-top: env( safe-area-inset-top, 0 );
+    padding-right: env( safe-area-inset-right, 0 );
+    padding-bottom: env( safe-area-inset-bottom, 0 );
+    padding-left: env( safe-area-inset-left, 0 );
+    line-height: 1.5;
+
+}
+
+.markdown-body .button,
+.markdown-body button,
+.markdown-body a,
+.button,
+button,
+a {
+
+    display: inline-block;
+    margin: 0 4px 4px;
+    border: 0;
+
+    border-radius: 3px;
+    transition: all .3s cubic-bezier( .455, .03, .515, .955 );
+    will-change: auto;
+
+}
+
+.markdown-body .button,
+.markdown-body button,
+.button,
+button {
+
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient( to right, #{$color-start} 0%, #{$color-end} 51%, #{$color-start} 100% );
+    background-image: linear-gradient( to right, var( --color-start, #{$color-start} ) 0%, var( --color-end, #{$color-end} ) 51%, var( --color-start, #{$color-start} ) 100% );
+    background-position: left center;
+    appearance: none;
+
+    &:hover {
+
+        background-position: right center;
+
+    }
+
+}
+
+.markdown-body a,
+a {
+
+    color: #{$color-start};
+    color: var( --color-start, #{$color-start} );
+
+}
