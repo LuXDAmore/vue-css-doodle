@@ -23,7 +23,6 @@
     // css-doodle import
     const cssDoodle = () => import(
         /* webpackChunkName: "css-doodle" */
-        /* webpackMode: "lazy" */
         'css-doodle'
     );
 
