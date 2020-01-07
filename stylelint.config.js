@@ -70,7 +70,10 @@ module.exports = {
         'selector-pseudo-element-no-unknown': [
             true,
             {
-                ignorePseudoElements: [ 'v-deep' ],
+                ignorePseudoElements: [
+                    'v-deep',
+                    'css-doodle',
+                ],
             },
         ],
         'custom-property-empty-line-before': [
