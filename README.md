@@ -148,18 +148,19 @@ This package is available on npm.
 | Attribute | Type | Default | Required | About |
 |:--------------------:|--------------------|:-------:|:--------:|-------------------------------------|
 | title | String | null | false | The title |
-| grid | String or Number | null | false | Check the [DOCS](https://css-doodle.com/#usage) |
-| use | String | null | false | Check the [DOCS](https://css-doodle.com/#usage) |
+| grid | String or Number | null | false | Value of `grid-attr` |
+| use | String | null | false | Value of `use-attr` |
 | height | String | null | false | Height of the doodle |
 | width | String | null | false | Width of the doodle |
-| mxAuto | Boolean | false | false | Add margin-auto to the doodle |
-| fitWidth | Boolean | false | false | Force the doodle to fit in a max-width |
-| fitHeight | Boolean | false | false | Force the doodle to fit in a max-height |
-| fillHeight | Boolean | false | false | Expand the doodle to an height of 100% |
+| mxAuto | Boolean | false | false | Add `margin-left|right-auto` to the doodle |
+| fitWidth | Boolean | false | false | Force the doodle to fit in a `max-width` |
+| fitHeight | Boolean | false | false | Force the doodle to fit in a `max-height` |
+| fillHeight | Boolean | false | false | Expand the doodle to an `height of 100%` |
 | clickToUpdate | Boolean | false | false | Refresh on click |
-| overflowHidden | Boolean | false | false | Hide the overflow |
-| absolute | Boolean | false | false | Set position: absolute |
+| overflowHidden | Boolean | false | false | Add `overflow-hidden` to the container |
+| absolute | Boolean | false | false | Set position to `absolute` |
 
+Check the [DOCS for more information](https://css-doodle.com/#usage).
 ___
 
 [npm-version-src]: https://img.shields.io/npm/v/@luxdamore/vue-css-doodle/latest.svg?style=flat-square
@@ -187,6 +188,8 @@ Details changes for each release are documented in the [**release notes**](./CHA
 
 [MIT License](./LICENSE) // Copyright (©) 2019-present [Luca Iaconelli](https://lucaiaconelli.it)
 
+___
+
 #### 💸 Are you feeling generous today?  :)
 
 Do you want to share a beer? We can be good friends.. __[Paypal](https://www.paypal.me/luxdamore) // [Patreon](https://www.patreon.com/luxdamore)__
@@ -204,3 +207,9 @@ Do you want to share a beer? We can be good friends.. __[Paypal](https://www.pay
 A web component for drawing patterns with CSS, [css-doodle](https://css-doodle.com)
 
 > Check the [full list of doodle on Codepen](https://codepen.io/collection/XyVkpQ)
+
+___
+
+##### 💡 Lighthouse
+
+![Lighthouse audit score](./lighthouse-audit.jpg)
