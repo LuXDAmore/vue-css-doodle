@@ -8,6 +8,7 @@
 
                     <vue-css-doodle
                         v-once
+                        title="Picasso"
                         mx-auto
                         absolute
                         use="var(--ruleTwo)"
@@ -20,6 +21,7 @@
 
                     <vue-css-doodle
                         v-once
+                        title="Rain"
                         mx-auto
                         fit-width
                         fill-height
@@ -51,6 +53,7 @@
 
                     <vue-css-doodle
                         v-once
+                        title="Inception"
                         mx-auto
                         absolute
                         use="var(--ruleOne)"
@@ -168,6 +171,16 @@
                     links[ i ].setAttribute(
                         'target',
                         '_blank',
+                    );
+
+                    links[ i ].setAttribute(
+                        'rel',
+                        'noopener',
+                    );
+
+                    links[ i ].setAttribute(
+                        'alt',
+                        links[ i ].textContent,
                     );
 
                 }
