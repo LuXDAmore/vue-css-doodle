@@ -53,6 +53,9 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
+    "markdownlint.ignore": [
+        "CHANGELOG.md"
+    ],
     "cSpell.ignoreWords": [
         "commitlint",
         "hljs",
