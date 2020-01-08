@@ -64,8 +64,8 @@ $background-color: #fff;
 
     section {
 
-        margin: 0 0 16px;
         min-height: 100vh;
+        margin: 0 0 16px;
 
     }
 
@@ -73,6 +73,8 @@ $background-color: #fff;
 
         position: fixed;
         margin: 0 auto;
+
+        // stylelint-disable-next-line
         mix-blend-mode: color-burn;
 
         &--bottom {
