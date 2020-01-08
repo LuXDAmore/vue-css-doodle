@@ -40,7 +40,7 @@
         "stylelint-fix": "stylelint ./src/**/*.scss --fix",
         "lint": "npm run eslint && npm run stylelint",
         "lint-fix": "npm run eslint-fix",
-        "release": "standard-version && git push --follow-tags && npm publish",
+        "release": "npm run build && standard-version && git push --follow-tags && npm publish",
         "precommit": "npm run lint"
     },
     "dependencies": {
