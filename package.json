@@ -1,6 +1,6 @@
 {
     "name": "@luxdamore/vue-css-doodle",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Porting of css-doodle to VueJs, a web component for drawing patterns with CSS - SSR Compatible",
     "author": "Luca Iaconelli <lucabelli@msn.com> (https://lucaiaconelli.it)",
     "contributors": [
