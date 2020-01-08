@@ -30,6 +30,7 @@
         "serve": "vue-cli-service serve",
         "build:library": "vue-cli-service build --dest ./dist --target lib --name VueCssDoodle ./src/VueCssDoodle/index.js",
         "build:docs": "vue-cli-service build --modern --dest ./docs",
+        "prebuild": "npm run lint",
         "build": "npm run build:library && npm run build:docs",
         "prepare": "npm run build",
         "check-linting": "vue-cli-service lint",
