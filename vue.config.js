@@ -1,3 +1,5 @@
+import WebpackLighthousePlugin from 'webpack-lighthouse-plugin';
+
 const IS_DEV = process.env.NODE_ENV !== 'production'
     , BASE_URL = (
         ! IS_DEV
@@ -14,6 +16,14 @@ module.exports = {
         output: {
             libraryExport: 'default',
         },
+        plugins: [
+            new WebpackLighthousePlugin(
+                {
+                    url: IS_DEV ? 'http://localhost:8080' : BASE_URL,
+                    saveAssets: true,
+                },
+            ),
+        ],
     },
     chainWebpack(
         config,
