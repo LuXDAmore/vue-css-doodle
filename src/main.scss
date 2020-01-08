@@ -66,3 +66,9 @@ a {
     color: var( --color-start, #{$color-start} );
 
 }
+
+.markdown-body .hljs-comment {
+
+    color: #2c3e50;
+
+}
