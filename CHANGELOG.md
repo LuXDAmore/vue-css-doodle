@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/LuXDAmore/vue-css-doodle/compare/v0.0.3...v0.0.4) (2020-01-08)
+
+
+### Features
+
+* check lint before build ([1e1e7c2](https://github.com/LuXDAmore/vue-css-doodle/commit/1e1e7c29de656b2854fd04cf13c72f85dc2629ba))
+
 ### [0.0.3](https://github.com/LuXDAmore/vue-css-doodle/compare/v0.0.2...v0.0.3) (2020-01-08)
 
 ### 0.0.2 (2020-01-08)
