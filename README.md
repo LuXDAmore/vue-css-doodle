@@ -141,8 +141,6 @@ This package is available on npm.
 
 ```
 
-### Options
-
 #### Props
 
 | Attribute | Type | Default | Required | About |
