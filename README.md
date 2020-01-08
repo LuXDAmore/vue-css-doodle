@@ -105,7 +105,21 @@ _Use it just one time in the main file of your project or in every views where y
 
 ```html
 
-    <vue-css-doodle />
+    <vue-css-doodle>
+        :doodle {
+            @grid: 50x1 / 80%;
+        }
+
+        @place-cell: center;
+        @size: calc(100% / @size * @i);
+
+        transform: rotate(calc(@i * 5deg));
+
+        border-radius: 30%;
+        border: 1px solid hsla(
+            calc(10 + 4 * @i), 70%, 68%, @r.8
+        );
+    </vue-css-doodle>
 
 ```
 
