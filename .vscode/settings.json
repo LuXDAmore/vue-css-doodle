@@ -59,6 +59,7 @@
     "cSpell.ignoreWords": [
         "commitlint",
         "hljs",
-        "multicolumn"
+        "multicolumn",
+        "navbutton"
     ]
 }
