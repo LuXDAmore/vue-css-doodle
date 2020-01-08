@@ -70,7 +70,7 @@
         "eslint-plugin-vue": "^6.0.1",
         "github-markdown-css": "^3.0.1",
         "highlight.js": "^9.17.1",
-        "husky": "latest",
+        "husky": "^4.0.1",
         "modern-normalize": "^0.6.0",
         "node-sass": "^4.13.0",
         "postcss-combine-duplicated-selectors": "^8.0.3",
