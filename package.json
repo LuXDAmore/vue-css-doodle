@@ -93,8 +93,7 @@
         "stylelint-no-unsupported-browser-features": "^4.0.0",
         "stylelint-order": "^4.0.0",
         "vue-markdown-loader": "^2.4.1",
-        "vue-template-compiler": "^2.6.11",
-        "webpack-lighthouse-plugin": "^1.0.5"
+        "vue-template-compiler": "^2.6.11"
     },
     "license": "MIT",
     "repository": {
