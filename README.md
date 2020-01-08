@@ -150,12 +150,12 @@ This package is available on npm.
 | use | String | null | false | Value of `use-attr` |
 | height | String | null | false | Height of the doodle |
 | width | String | null | false | Width of the doodle |
-| mxAuto | Boolean | false | false | Add `margin-left|right-auto` to the doodle |
-| fitWidth | Boolean | false | false | Force the doodle to fit in a `max-width` |
-| fitHeight | Boolean | false | false | Force the doodle to fit in a `max-height` |
-| fillHeight | Boolean | false | false | Expand the doodle to an `height of 100%` |
-| clickToUpdate | Boolean | false | false | Refresh on click |
-| overflowHidden | Boolean | false | false | Add `overflow-hidden` to the container |
+| mx-auto | Boolean | false | false | Add `margin-left|right-auto` to the doodle |
+| fit-width | Boolean | false | false | Force the doodle to fit in a `max-width` |
+| fit-height | Boolean | false | false | Force the doodle to fit in a `max-height` |
+| fill-height | Boolean | false | false | Expand the doodle to an `height of 100%` |
+| click-to-update | Boolean | false | false | Refresh on click |
+| overflow-hidden | Boolean | false | false | Add `overflow-hidden` to the container |
 | absolute | Boolean | false | false | Set position to `absolute` |
 
 Check the [DOCS for more information](https://css-doodle.com/#usage).
