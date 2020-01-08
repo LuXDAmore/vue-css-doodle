@@ -371,6 +371,13 @@ module.exports = {
                 ignoreTopLevelFunctions: true,
             }
         ],
+        'lines-between-class-members': [
+            'warn',
+            'always',
+            {
+                exceptAfterSingleLine: true,
+            }
+        ],
         // Plugins
         // Standard
         'unicorn/prefer-includes': 'warn',
