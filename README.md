@@ -203,4 +203,4 @@ Do you want to share a beer? We can be good friends.. __[Paypal](https://www.pay
 
 A web component for drawing patterns with CSS, [css-doodle](https://css-doodle.com)
 
-> Check the full list of doodle on Codepen, [here](https://codepen.io/collection/XyVkpQ)
+> Check the [full list of doodle on Codepen](https://codepen.io/collection/XyVkpQ)
