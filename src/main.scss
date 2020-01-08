@@ -1,10 +1,12 @@
 $color-start: #e74c3c;
 $color-end: #feca57;
+$color-accessible: #2c3e50;
 
 :root {
 
     --color-start: #{$color-start};
     --color-end: #{$color-end};
+    --color-accessible: #{$color-accessible};
 
     font-size: 16px;
 
@@ -13,10 +15,10 @@ $color-end: #feca57;
 // Skeleton
 body {
 
-    padding-top: env( safe-area-inset-top, 0 );
-    padding-right: env( safe-area-inset-right, 0 );
-    padding-bottom: env( safe-area-inset-bottom, 0 );
-    padding-left: env( safe-area-inset-left, 0 );
+    padding-top: env(safe-area-inset-top, 0);
+    padding-right: env(safe-area-inset-right, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    padding-left: env(safe-area-inset-left, 0);
     line-height: 1.5;
 
 }
@@ -67,8 +69,16 @@ a {
 
 }
 
-.markdown-body .hljs-comment {
+.markdown-body {
 
-    color: #2c3e50;
+    .hljs-meta,
+    .hljs-meta-keyword,
+    .hljs-attr,
+    .hljs-comment {
+
+        color: #{$color-accessible} !important;
+        color: var( --color-accessible, #{$color-accessible} ) !important;
+
+    }
 
 }
