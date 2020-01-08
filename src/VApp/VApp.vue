@@ -179,7 +179,7 @@
                     );
 
                     links[ i ].setAttribute(
-                        'alt',
+                        'title',
                         links[ i ].textContent,
                     );
 
