@@ -1,7 +1,5 @@
 # 🎉 Vue Css Doodle
 
-[DEMO](https://luxdamore.github.io/vue-css-doodle)
-
 > Porting of css-doodle to VueJs, a web component for drawing patterns with CSS
 
 [![npm version][npm-version-src]][npm-version-href]
