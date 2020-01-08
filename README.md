@@ -101,8 +101,6 @@ This package is available on npm.
 
 #### Markup
 
-_Use it just one time in the main file of your project or in every views where you want it._
-
 ```html
 
     <vue-css-doodle>
