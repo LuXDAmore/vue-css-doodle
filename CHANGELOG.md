@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/LuXDAmore/vue-css-doodle/compare/v0.0.6...v0.0.7) (2020-01-08)
+
+
+### Features
+
+* accessibility, added title ([a71b5c6](https://github.com/LuXDAmore/vue-css-doodle/commit/a71b5c6ba622e7a37a6d3e436ebfd8e99b67d9e8))
+* webpack-lightouhse-cli ([2db2684](https://github.com/LuXDAmore/vue-css-doodle/commit/2db2684f48cc23078748edba6360b70b9a8b6b72))
+
 ### [0.0.6](https://github.com/LuXDAmore/vue-css-doodle/compare/v0.0.5...v0.0.6) (2020-01-08)
 
 
