@@ -19,7 +19,7 @@ module.exports = {
                 severity: 'warning',
                 ignore: [
                     'multicolumn',
-                    'object-fi',
+                    'object-fit',
                     'calc',
                     'border-radius',
                     'user-select-none',
