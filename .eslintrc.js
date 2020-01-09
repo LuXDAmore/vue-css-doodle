@@ -20,8 +20,16 @@ module.exports = {
     ],
     rules: {
         'indent': 'off',
-        'no-console': 'off',
-        'no-debugger': 'error',
+        'no-console': [
+            'warn',
+            {
+                allow: [
+                    'info',
+                    'error',
+                ],
+            }
+        ],
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
         'one-var': [
             'warn',
             {
@@ -374,7 +382,7 @@ module.exports = {
             'warn',
             {
                 vars: 'all',
-                args: 'after-used', // This needs to be off so we can specify mixin interfaces
+                args: 'after-used',
                 ignoreRestSiblings: true,
                 caughtErrors: 'all',
                 argsIgnorePattern: '^_',
@@ -407,7 +415,10 @@ module.exports = {
         // Plugins
         // Standard
         'unicorn/prefer-includes': 'warn',
-        'standard/computed-property-even-spacing': 'off',
+        'standard/computed-property-even-spacing': [
+            'warn',
+            'always',
+        ],
         'standard/object-curly-even-spacing': [
             'warn',
             'either',
@@ -446,7 +457,7 @@ module.exports = {
         'vue/multiline-html-element-content-newline': [
             'warn',
             {
-                ignoreWhenEmpty: true,
+                ignoreWhenEmpty: false,
                 allowEmptyLines: true,
             }
         ],
