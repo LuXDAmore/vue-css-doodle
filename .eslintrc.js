@@ -6,10 +6,10 @@ module.exports = {
     },
     extends: [
         '@nuxtjs',
+        '@vue/prettier',
         'eslint:recommended',
         'plugin:nuxt/recommended',
         'plugin:vue/recommended',
-        '@vue/prettier',
     ],
     plugins: [
         'standard',
@@ -141,7 +141,8 @@ module.exports = {
         'no-multiple-empty-lines': [
             'warn',
             {
-                max: 2,
+                max: 1,
+                maxEOF: 1,
                 maxBOF: 1,
             }
         ],
@@ -441,6 +442,13 @@ module.exports = {
         'vue/name-property-casing': [
             'warn',
             'kebab-case'
+        ],
+        'vue/multiline-html-element-content-newline': [
+            'warn',
+            {
+                ignoreWhenEmpty: true,
+                allowEmptyLines: true,
+            }
         ],
         'vue/attribute-hyphenation': [
             'warn',
