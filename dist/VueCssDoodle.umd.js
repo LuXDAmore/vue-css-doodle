@@ -3480,7 +3480,7 @@ module.exports = g;
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3da19b5a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueCssDoodle/VueCssDoodle.vue?vue&type=template&id=5c11e18e&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"46ec6ea2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueCssDoodle/VueCssDoodle.vue?vue&type=template&id=5c11e18e&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"doodle",staticClass:"vue-css-doodle",class:_vm.classes,style:(_vm.style)},[_vm._m(0)],1)}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('css-doodle',_vm._g(_vm._b({attrs:{"grid":_vm.grid,"title":_vm.title,"use":_vm.use,"click-to-update":_vm.clickToUpdateToString}},'css-doodle',_vm.$attrs,false),_vm.$listeners),[_vm._t("default",null,{"generate":_vm.generate})],2)}]
 
