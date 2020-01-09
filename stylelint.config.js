@@ -71,7 +71,10 @@ module.exports = {
             true,
             {
                 ignore: [ 'custom-elements' ],
-                ignoreTypes: [ 'css-doodle' ],
+                ignoreTypes: [
+                    'css-doodle',
+                    'v-deep',
+                ],
             },
         ],
         'selector-pseudo-element-no-unknown': [
@@ -104,8 +107,8 @@ module.exports = {
         'block-no-empty': null,
         'function-url-quotes': 'always',
         'max-empty-lines': [ 2 ],
-        'selector-max-compound-selectors': [ 5 ],
-        'max-nesting-depth': [ 6 ],
+        'selector-max-compound-selectors': [ 9 ],
+        'max-nesting-depth': [ 9 ],
         'at-rule-no-unknown': null,
         'property-no-vendor-prefix': true,
         'selector-descendant-combinator-no-non-space': true,
@@ -175,7 +178,7 @@ module.exports = {
         'block-closing-brace-newline-after': [
             'always',
             {
-                'ignoreAtRules': [
+                ignoreAtRules: [
                     'if',
                     'else',
                 ],
@@ -184,6 +187,15 @@ module.exports = {
         'at-rule-name-space-after': 'always',
         // SASS - SCSS
         // If - Else
+        'scss/at-rule-no-unknown': [
+            true,
+            {
+                ignoreAtRules: [
+                    'v-deep',
+                    'css-doodle',
+                ],
+            },
+        ],
         'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
         'scss/at-else-closing-brace-space-after': 'always-intermediate',
         'scss/at-else-empty-line-before': 'never',
