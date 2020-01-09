@@ -36,6 +36,7 @@ $background-color: #fff;
 
             position: relative;
             padding: 16px;
+            border-radius: 3px;
 
         }
 
@@ -58,7 +59,8 @@ $background-color: #fff;
 
     label {
 
-        display: block;
+        margin-bottom: 6px;
+        line-height: 1;
 
     }
 
@@ -67,19 +69,35 @@ $background-color: #fff;
         min-height: 100vh;
         margin: 0 0 16px;
 
+        &.doodle {
+
+            position: relative;
+            z-index: 0;
+            height: 100%;
+            margin: -24px;
+
+        }
+
     }
 
     .controls {
 
-        position: fixed;
+        position: absolute;
+        z-index: 1;
         margin: 0 auto;
+        padding: 6px 8px;
+        background-color: rgba( 255, 255, 255, .72 );
+        border-radius: 3px;
 
-        // stylelint-disable-next-line
-        mix-blend-mode: color-burn;
+        @media ( min-width: 768px ) {
+
+            position: fixed;
+
+        }
 
         &--bottom {
 
-            top: 92vh;
+            top: 81%;
 
         }
 
