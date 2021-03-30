@@ -81,7 +81,7 @@
         "postcss-scoped": "^0.0.0",
         "postcss-scss": "^2.0.0",
         "postcss-url": "^8.0.0",
-        "prettier": "^1.19.1",
+        "prettier": "^2.2.1",
         "prettier-eslint": "^9.0.1",
         "prettier-stylelint": "^0.4.2",
         "sass-loader": "^8.0.0",
