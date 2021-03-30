@@ -79,7 +79,7 @@
         "postcss-loader": "^3.0.0",
         "postcss-preset-env": "^6.7.0",
         "postcss-scoped": "^0.0.0",
-        "postcss-scss": "^2.0.0",
+        "postcss-scss": "^3.0.5",
         "postcss-url": "^8.0.0",
         "prettier": "^1.19.1",
         "prettier-eslint": "^9.0.1",
